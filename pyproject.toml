@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "utility-trigger-dag"
-version = "1.0.0"
+version = "1.0.1"
 description = "A Meltano utility to trigger dags on an Airflow instance"
 authors = ["Ahren Stevens-Taylor <ahrent@packt.com>"]
 

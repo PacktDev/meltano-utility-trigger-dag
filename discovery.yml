@@ -1,0 +1,18 @@
+utilities:
+  - name: trigger_dag
+    namespace: packtdev
+    pip_url: git+https://github.com/PacktDev/meltano-utility-trigger-dag.git@v1.0.0
+    settings:
+      - name: dag_url
+        value: http://airflow:port/api/v1/dags/dag_id/dagRuns
+        env: TRIGGER_DAG_URL
+        description: DAG URL, in format of http://airflow:port/api/v1/dags/dag_id/dagRuns
+        protected: true
+      - name: username
+        env: TRIGGER_DAG_USERNAME
+        description: Username for authenticating to Airflow
+        protected: true
+      - name: password
+        env: TRIGGER_DAG_PASSWORD
+        description: Password for authenticating to Airflow
+

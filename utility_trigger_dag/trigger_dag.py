@@ -18,6 +18,7 @@ def main():
         }
     )
     print(f'Response Status Code >> {response.status_code}') 
+    print(f'{response.text}')
     if response.status_code==200:
         return True
     else:

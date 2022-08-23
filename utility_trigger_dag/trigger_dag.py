@@ -3,6 +3,9 @@ from os import environ
 from os.path import join
 
 def main():
+    print(f'URL : {environ.get("TRIGGER_DAG_URL")}')
+    print('xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx')
+    print(f'Username : {environ.get("TRIGGER_DAG_USERNAME")} and Password : {environ.get("TRIGGER_DAG_PASSWORD")}')
     response = post(
         url=environ.get('TRIGGER_DAG_URL'),
         auth=(

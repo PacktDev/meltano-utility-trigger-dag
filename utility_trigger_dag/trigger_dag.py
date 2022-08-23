@@ -17,7 +17,7 @@ def main():
             "dag_run_id": f'{environ.get("AIRFLOW_CTX_DAG_ID")}_{environ.get("AIRFLOW_CTX_DAG_RUN_ID")}'
         }
     )
-    if response.status is 200:
+    if response.status_code==200:
         return True
     else:
         response.raise_for_status()

@@ -38,6 +38,6 @@ def main():
     }
     response = requests.request("POST", url, headers=headers, data=payload)
     print(response.status_code)
-    print(response.text)
+#     print(response.text)
    
 

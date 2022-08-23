@@ -11,7 +11,7 @@ def main():
         ),
         json={
             conf: {},
-            dag_run_id: f'{environ.get('AIRFLOW_CTX_DAG_ID')}_{environ.get('AIRFLOW_CTX_DAG_RUN_ID')}'
+            dag_run_id: f'{environ.get("AIRFLOW_CTX_DAG_ID")}_{environ.get("AIRFLOW_CTX_DAG_RUN_ID")}'
         }
     )
     if response.status is 200:

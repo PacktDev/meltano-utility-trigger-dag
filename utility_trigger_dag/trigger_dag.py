@@ -37,7 +37,10 @@ def main():
       'Content-Type': 'text/plain'
     }
     response = requests.request("POST", url, headers=headers, data=payload)
+    print('RESPONSE STATUS CODE. . .')
     print(response.status_code)
-#     print(response.text)
+    print('***************************************************')
+    print('RESPONSE TEXT. . .')
+    print(response.text)
    
 
